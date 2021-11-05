@@ -92,7 +92,6 @@ display: flex;
 flex-direction: column;
 justify-content: space-around;
 height: 18vw;
-background-color: red;
 width: 65%;
 padding-left: 4%;
 
