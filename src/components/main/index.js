@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql, useStaticQuery } from 'gatsby'
+import { graphql, Link, useStaticQuery } from 'gatsby'
 import * as S from './style'
 
 export function Main() {
@@ -90,20 +90,73 @@ export function Main() {
                 </S.BoxCard>
             </S.ContainerCard>
             <S.ContainerBox>
+              <S.BoxTitleUloax>
+                <h2>Why Ride <span>With Uloax </span></h2>
+              </S.BoxTitleUloax>
               <div>
-                <h2>{titleUloax}</h2>
-              </div>
               <S.Box>
-                <picture>
+                <S.BoxImg>
                   <img src={imgBox1.url} />
-                </picture>
+                </S.BoxImg>
                 <S.Elements>
                   <h3>{titleBox1}</h3>
                   <p>{txtBox}</p>
                   <button>book now</button>
                 </S.Elements>
               </S.Box>
+              </div>
+              <div>
+              <S.Box>
+                <S.Elements style={{alignItems: "flex-end", textAlign: "end", paddingRight: "4%"}}>
+                  <h3>{titleBox2}</h3>
+                  <p>{txtBox}</p>
+                  <button>book now</button>
+                </S.Elements>
+                <S.BoxImg>
+                  <img src={imgBox2.url} />
+                </S.BoxImg>
+                </S.Box>
+              </div>
+              <div>
+              <S.Box>
+                <S.BoxImg>
+                  <img src={imgBoxTaxi.url} />
+                </S.BoxImg>
+                <S.Elements>
+                  <h3>{titleBox1}</h3>
+                  <p>{txtBox}</p>
+                  <button>book now</button>
+                </S.Elements>
+              </S.Box>
+              </div>
+              <div>
+              <S.Box>
+                <S.Elements style={{alignItems: "flex-end", textAlign: "end", paddingRight: "4%"}}>
+                  <h3>{titleBox2}</h3>
+                  <p>{txtBox}</p>
+                  <button>book now</button>
+                </S.Elements>
+                <S.BoxImg>
+                  <img src={imgBoxTaxi.url} />
+                </S.BoxImg>
+                </S.Box>
+              </div>
             </S.ContainerBox>
+            <S.ContainerDownload>
+              <S.BoxDownload>
+                <S.TitleDownload>Download</S.TitleDownload>
+                <S.TextApp>Our App Today</S.TextApp>
+                <S.Background src={imgbackground.url} />
+                <S.Taxi src={imgTaxi.url} />
+                <Link to="./">
+                <S.Playstore src={imgPlayStore.url} />
+                </Link>
+                <Link to="./">
+                <S.Applestore src={imgAppleStore.url} />
+                </Link>
+                <S.Phone src={imgPhone.url} />
+              </S.BoxDownload>
+            </S.ContainerDownload>
         </S.Container>
     )
 }
