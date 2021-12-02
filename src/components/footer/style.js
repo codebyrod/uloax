@@ -104,7 +104,7 @@ button{
     color: #eceaea;
     background-color: #fecf3d;
     font-weight: 600;
-    font-size: 160%;
+    font-size: 150%;
     border-radius: 5px;
     cursor: pointer;
 }
