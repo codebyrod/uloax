@@ -1,7 +1,8 @@
 import React from 'react'
 import { createGlobalStyle } from 'styled-components'
-import {Header} from '../components/header'
+import Header from '../components/header'
 import {Main} from '../components/main'
+import {Footer} from '../components/footer'
 
 const GlobalStyle = createGlobalStyle `
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,100&display=swap');
@@ -21,6 +22,7 @@ export default function index() {
       <GlobalStyle />
       <Header />
       <Main />
+      <Footer />
     </div>
   )
 }
